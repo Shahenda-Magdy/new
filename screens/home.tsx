@@ -1,7 +1,6 @@
 import { Image, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
-// import NavOptions from '../components/NavOptions';
-
+import NavOptions from '../components/NavOptions';
 
 const HomeScreen = () => {
   const [search, setSearch] = useState('');
@@ -9,13 +8,17 @@ const HomeScreen = () => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <TextInput style={styles.searchInput}
-          placeholder="Type Here..."
+      <TextInput style={styles.searchInput}
+          placeholder="Search..."
           onChangeText={(text: string) => setSearch(text)}
           value={search}
           autoCapitalize='none'
         />
-        {/* <NavOptions term={search} /> */}
+        <NavOptions term={search} />
+        <Image
+          style={styles.image}
+          source={require('../assets/logo.webp')}
+        />
       </View>
     </SafeAreaView >
   )
