@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, Image, Button } from 'react-native';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
+import React from 'react';
 
 // Allows authentication session to complete and return results back here
 WebBrowser.maybeCompleteAuthSession();
