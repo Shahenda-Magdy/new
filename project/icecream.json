@@ -1,0 +1,19 @@
+{
+   "vanilla":[{
+    "price": 35,
+    "image":"../assets/Homemade-Vanilla-Ice-Cream-A22-1-P7270022-1024x1024.jpg"}
+ ],
+    "chocolate":[{
+    "price":  35,
+    "image":"../assets/low-carb-chocolate-ice-cream1.jpg"}
+ ],
+ "strawberry":[{
+    "price":35,
+    "image":"../assets/strawR.jpg"}],
+    "mango":[{
+        "price": 35,
+        "image":"../assets/DSC_0209.webp"}],
+    "caramel":[{
+        "price": 35,
+        "image":"../assets/carR.jpg"}]
+}
