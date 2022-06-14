@@ -4,12 +4,14 @@ import { useEffect, useState } from 'react';
 import { StyleSheet, View, Text, Image, Button, AsyncStorage } from 'react-native';
 import * as Google from 'expo-auth-session/providers/google';
 import * as WebBrowser from 'expo-web-browser';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 const Stack = createNativeStackNavigator();
 import pay from './pay';
 import login from './login';
 import HomeScreen from './screens/home';
+import ListScreen from './ListScreen';
+import address from './address';
 
 const App = () => (
   <NavigationContainer>
@@ -29,9 +31,23 @@ const App = () => (
           title: '',
         }} 
       />
+       <Stack.Screen 
+        name="ListScreen" 
+        component={ListScreen}
+        options={{
+          headerShown: false,
+        }} 
+      />
       <Stack.Screen 
         name="pay" 
         component={pay}
+        options={{
+          headerShown: false,  
+        }} 
+      />
+      <Stack.Screen 
+        name="address" 
+        component={address}
         options={{
           headerShown: false,  
         }} 
