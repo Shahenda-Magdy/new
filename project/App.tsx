@@ -10,7 +10,7 @@ const Stack = createNativeStackNavigator();
 import pay from './pay';
 import login from './login';
 import HomeScreen from './screens/home';
-import ListScreen from './ListScreen';
+import ListScreen from './screens/ListScreen';
 import address from './address';
 
 const App = () => (
